@@ -6,16 +6,16 @@
   <div class="cs-container">
     <!--Nav Logo-->
     <a href="/" class="cs-logo" aria-label="back to home">
-      {#
+      
       <img
-        src=""
-        alt=""
+        src="/assets/images/sr22-insurance-logo.png"
+        alt="sr22 insurance company new hampshire"
         width="210"
         height="29"
         aria-hidden="true"
         decoding="async"
       />
-      #} SRR22 New Hampshire
+     
     </a>
     <!--Navigation List-->
     <nav class="cs-nav" role="navigation">
@@ -29,7 +29,7 @@
       </button>
       <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
       <div class="cs-ul-wrapper">
-        {#
+        
         <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
           <li class="cs-li">
             <a href="/" class="cs-li-link cs-active"> Home </a>
@@ -37,11 +37,11 @@
           <!--Copy and paste this cs-dropdown list item and replace any .cs-li with this cs-dropdown group to make a new dropdown and it will work-->
           <li class="cs-li cs-dropdown" tabindex="0">
             <span class="cs-li-link">
-              What is SR22?
+              SR22 Insurance
               <img
                 class="cs-drop-icon"
                 src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/down-gold.svg"
-                alt="dropdown icon"
+                alt="dropdown icon for sr22 insurance nh"
                 width="15"
                 height="15"
                 decoding="async"
@@ -51,19 +51,14 @@
             <ul class="cs-drop-ul">
               <li class="cs-drop-li">
                 <a href="/other-content" class="cs-li-link cs-drop-link"
-                  >Other Content</a
-                >
-              </li>
-              <li class="cs-drop-li">
-                <a href="/other-content" class="cs-li-link cs-drop-link"
-                  >Other Content</a
+                  >SR22 Coverage</a
                 >
               </li>
             </ul>
           </li>
-          <li class="cs-li cs-dropdown" tabindex="0">
+          {# <li class="cs-li cs-dropdown" tabindex="0">
             <span class="cs-li-link">
-              Locations
+              Areas
               <img
                 class="cs-drop-icon"
                 src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/down-gold.svg"
@@ -80,24 +75,19 @@
                   >Location 1</a
                 >
               </li>
-              <li class="cs-drop-li">
-                <a href="/locations/location-1" class="cs-li-link cs-drop-link"
-                  >Location 2</a
-                >
-              </li>
             </ul>
-          </li>
+          </li> #}
           <li class="cs-li">
             <a href="/blog" class="cs-li-link">Blog</a>
           </li>
           <li class="cs-li">
-            <a href="/faq" class="cs-li-link">FAQs</a>
+            <a href="/faq" class="cs-li-link">FAQ</a>
           </li>
           <li class="cs-li">
             <a href="/contact" class="cs-li-link">Contact</a>
           </li>
         </ul>
-        #}
+        
       </div>
     </nav>
     <a href="tel:{{client.phoneForTel}}" class="cs-button-solid cs-nav-button"
