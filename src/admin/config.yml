@@ -24,3 +24,22 @@ collections:
       - { label: "Featured Image", name: "image", widget: "image" }
       - { label: "Image Caption", name: "imageAlt", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
+  - name: "location"
+    label: "Location"
+    folder: "src/content/location"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Location", name: "location", widget: "string" }
+      - { label: "Map URL", name: "mapUrl", widget: "string" }
+      - { label: "Page Title", name: "pageTitle", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Hero Title", name: "heroTitle", widget: "string" }
+      - { label: "Hero Text", name: "heroText", widget: "string" }
+      - { label: "Hero Alt", name: "heroAlt", widget: "string" }
+      - { label: "Tags", name: "tags", widget: "list", default: ["location"] }
+      - { label: "Featured Image", name: "image", widget: "image" }
+      - { label: "Image Caption", name: "imageAlt", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Summary Title", name: "summaryTitle", widget: "string" }
+      - { label: "Summary Text", name: "summaryText", widget: "string" }
